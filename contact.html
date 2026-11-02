@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Contact | Nikhil Rao Salesforce Assessments</title>
+<meta name="description" content="Independent, fixed-scope Salesforce Architecture and DevOps assessments by Nikhil Rao, Salesforce Certified System and Application Architect.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="draft" role="note">
+  <div class="wrap"><strong>Draft for review.</strong> Highlighted text like <span class="flag">[this]</span> is a placeholder or something to confirm before the site goes live. Remove this bar when publishing.</div>
+</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">Nikhil Rao</a>
+    <nav aria-label="Main">
+      <a href="assessments.html">Assessments</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="sample-report.html">Sample report</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <div class="copy">
+          <p class="label">Start with a call</p>
+          <h1>Book a 30-minute intro call</h1>
+          <p>We'll talk through what's going on in your org and whether an assessment fits. No obligation, and no pitch for a follow-on build.</p>
+          <div class="cta-row"><a class="btn primary" href="https://calendar.app.google/TykURckgz5f3c3QM6" target="_blank" rel="noopener">Pick a time</a></div>
+        </div>
+        <div class="reach">
+          <div class="row"><span class="label">Email</span><code id="email">nikhil317rao@gmail.com</code><button class="copy-btn" id="copy-email" type="button">Copy email</button></div>
+          <div class="row"><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/nikhilraoindianapolis" target="_blank" rel="noopener">linkedin.com/in/nikhilraoindianapolis</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Nikhil Rao</span>
+    <span>Independent Salesforce consultant. Not affiliated with or endorsed by Salesforce, Inc.</span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('copy-email').addEventListener('click', function () {
+  var btn = this, text = document.getElementById('email').textContent;
+  function selectIt() {
+    var r = document.createRange(); r.selectNodeContents(document.getElementById('email'));
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+    btn.textContent = 'Selected, press Ctrl+C';
+  }
+  try {
+    navigator.clipboard.writeText(text).then(function () { btn.textContent = 'Copied'; }, selectIt);
+  } catch (e) { selectIt(); }
+  setTimeout(function () { btn.textContent = 'Copy email'; }, 2500);
+});
+</script>
+</body>
+</html>

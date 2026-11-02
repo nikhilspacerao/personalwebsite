@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Sample report | Nikhil Rao Salesforce Assessments</title>
+<meta name="description" content="Independent, fixed-scope Salesforce Architecture and DevOps assessments by Nikhil Rao, Salesforce Certified System and Application Architect.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="draft" role="note">
+  <div class="wrap"><strong>Draft for review.</strong> Highlighted text like <span class="flag">[this]</span> is a placeholder or something to confirm before the site goes live. Remove this bar when publishing.</div>
+</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">Nikhil Rao</a>
+    <nav aria-label="Main">
+      <a href="assessments.html">Assessments</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="sample-report.html" aria-current="page">Sample report</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="sample">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="label">Sample deliverable</p>
+        <h1>Every finding comes with a risk, an effort and a next step</h1>
+        <p>The report opens with a findings register like this one, so leaders can see what matters most in a few minutes.</p>
+      </div>
+      <div class="register">
+        <div class="register-head"><strong>Findings register (illustrative example)</strong><span class="label">DevOps Assessment · excerpt</span></div>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>ID</th><th>Finding</th><th>Risk</th><th>Effort</th><th>Recommended next step</th></tr></thead>
+            <tbody>
+              <tr><td class="id">DO-01</td><td>Production changes are deployed by hand, with no record of what changed or why.</td><td><span class="sev high">High</span></td><td>Medium</td><td>Put metadata in source control and deploy from it.</td></tr>
+              <tr><td class="id">DO-02</td><td>Sandboxes are refreshed ad hoc, so testing runs against stale data and config.</td><td><span class="sev med">Medium</span></td><td>Low</td><td>Set a refresh calendar tied to the release cycle.</td></tr>
+              <tr><td class="id">DO-03</td><td>Apex tests meet the coverage minimum but assert very little.</td><td><span class="sev med">Medium</span></td><td>Medium</td><td>Add assertions to tests on the most-changed classes first.</td></tr>
+              <tr><td class="id">DO-04</td><td>No rollback plan exists for releases.</td><td><span class="sev high">High</span></td><td>Low</td><td>Write a short rollback checklist and use it on the next release.</td></tr>
+              <tr><td class="id">DO-05</td><td>Release notes live in personal email threads.</td><td><span class="sev low">Low</span></td><td>Low</td><td>Keep one shared release log.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p class="note">Example findings written to show the format. They don't describe any specific organization.</p>
+      <div class="deliverables">
+        <div><strong>Written report</strong><span>Findings, evidence and context in plain language.</span></div>
+        <div><strong>Prioritized roadmap</strong><span>Phased work ordered by risk and effort.</span></div>
+        <div><strong>Live readout</strong><span>A walkthrough for your team and leaders, with time for questions.</span></div>
+        <div><strong>Repeatable process</strong><span>A checklist your team can rerun to track progress.</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="next">
+    <div class="wrap">
+      <p>Want to see whether an assessment fits?</p>
+      <a class="btn primary" href="https://calendar.app.google/TykURckgz5f3c3QM6" target="_blank" rel="noopener">Book a 30-minute intro call</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Nikhil Rao</span>
+    <span>Independent Salesforce consultant. Not affiliated with or endorsed by Salesforce, Inc.</span>
+  </div>
+</footer>
+</body>
+</html>
